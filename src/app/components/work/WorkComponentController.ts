@@ -9,6 +9,6 @@ export class WorkComponentController {
     }
 
     save() {
-
+        this.works.push(this.entity.clone());
     }
 }
