@@ -1,0 +1,1 @@
+export { WorkComponent } from './WorkComponent';

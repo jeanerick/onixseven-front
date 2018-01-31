@@ -1,0 +1,21 @@
+<div class="jumbotron mt-5">
+    <div class="container">
+        <div class="input-group input-group-sm mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Usuário</span>
+            </div>
+            <input #login type="text" class="form-control" [(ngModel)]="userLogin" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+        </div>
+        <div class="input-group input-group-sm mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Senha</span>
+            </div>
+            <input #pass type="password" class="form-control" [(ngModel)]="userPassword" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+        </div>
+        <div class="mx-auto">
+            <button type="button" [class.disabled]="!login.value || !pass.value" (click)="limpar()" class="btn btn-secondary btn-sm">Limpar</button>
+            <button type="button" [class.disabled]="!login.value || !pass.value" (click)="logar()"class="btn btn-primary btn-lg">Entrar</button>
+        </div>
+
+    </div>
+</div>
