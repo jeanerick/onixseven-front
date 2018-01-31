@@ -1,0 +1,30 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-8">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Descrição</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Programador</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col">
+            <form novalidate>
+                <div class="form-group">
+                    <label for="workName">Email address</label>
+                    <input type="text" name="workName" [(ngModel)]="controller.entity.nome" class="form-control" id="workName" aria-describedby="emailHelp" placeholder="Descrição da profissão">
+                </div>
+
+                <button type="submit" (click)="controller.save()"class="btn btn-primary">Cadastrar</button>
+
+            </form>
+        </div>
+    </div>
+</div>
